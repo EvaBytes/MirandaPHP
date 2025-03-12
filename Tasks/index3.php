@@ -8,10 +8,17 @@ if ($roomsArray && is_array($roomsArray)) {
     
     foreach ($roomsArray as $room) {
         echo '<li>';
-        echo 'Name: ' . htmlspecialchars($room['Name']) . '<br>';
-        echo 'Number: ' . htmlspecialchars($room['Number']) . '<br>';
-        echo 'Price: $' . htmlspecialchars($room['Price']) . '<br>';
-        echo 'Discount: ' . htmlspecialchars($room['Discount']) . '%<br>';
+        echo 'Type: ' . htmlspecialchars($room['roomType'] ?? 'No disponible') . '<br>';
+        echo 'Number: ' . htmlspecialchars($room['roomNumber'] ?? 'No disponible') . '<br>';
+        echo 'Rate: ' . htmlspecialchars($room['rate'] ?? 'No disponible') . '<br>';
+        echo 'Offer Price: ' . htmlspecialchars($room['offerPrice'] ?? 'No disponible') . '<br>';
+        echo 'Status: ' . htmlspecialchars($room['status'] ?? 'No disponible') . '<br>';
+        
+        if (isset($room['guest'])) {
+            echo 'Guest Name: ' . htmlspecialchars($room['guest']['fullName'] ?? 'No disponible') . '<br>';
+            echo 'Reservation Number: ' . htmlspecialchars($room['guest']['reservationNumber'] ?? 'No disponible') . '<br>';
+        }
+        
         echo '</li>';
     }
     
@@ -20,3 +27,7 @@ if ($roomsArray && is_array($roomsArray)) {
     echo 'Error al cargar los datos de las habitaciones.';
 }
 ?>
+
+
+
+# http://localhost:8000/Tasks/index3.php

@@ -1,3 +1,9 @@
+#Utilizar el mismo código para importar el archivo JSON pero
+esta vez pon una etiqueta <ol></ol> y mostrar cada habitación como un
+<li></li> utilizando un bucle de PHP. Mostrar las propiedades Name, Number,
+Price y Discount#
+
+
 <?php
 $jsonContent = file_get_contents('../Data/rooms.json');
 
@@ -24,9 +30,11 @@ if ($roomsArray && is_array($roomsArray)) {
     
     echo '</ol>';
 } else {
-    echo 'Error al cargar los datos de las habitaciones.';
+    echo 'Error loading room data.';
 }
+
 ?>
+
 
 
 

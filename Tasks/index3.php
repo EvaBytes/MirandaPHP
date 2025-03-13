@@ -1,7 +1,7 @@
 <!--Utilizar el mismo código para importar el archivo JSON pero
 esta vez pon una etiqueta <ol></ol> y mostrar cada habitación como un
 <li></li> utilizando un bucle de PHP. Mostrar las propiedades Name, Number,
-Price y Discount --> !
+Price y Discount --> 
 
 
 <?php
@@ -38,4 +38,4 @@ if ($roomsArray && is_array($roomsArray)) {
 
 
 
-<!-- http://localhost:8000/Tasks/index3.php
+<!-- http://localhost:8000/Tasks/index3.php -->

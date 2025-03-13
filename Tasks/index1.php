@@ -1,6 +1,6 @@
-# Crear un array en PHP conteniendo 3 habitaciones (cada una es
+<!--Crear un array en PHP conteniendo 3 habitaciones (cada una es
 un array asociativo). Cada habitación tiene 5 propiedades: ID, Name,
-Number, Price, Discount. Muestra el array entero dentro de una etiqueta pre.#
+Number, Price, Discount. Muestra el array entero dentro de una etiqueta pre.-->
 
 <?php
 
